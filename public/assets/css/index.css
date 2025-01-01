@@ -1,0 +1,307 @@
+:root {
+    --ff: "Poppins";
+}
+
+* {
+    border: 0;
+    padding: 0;
+    color: black;
+    font-family: var(--ff);
+}
+
+.uni-logo {
+    width: 200px;
+    height: 200px;
+}
+
+
+.navbar-links .nav-item .nav-link {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+}
+
+.navbar-links .nav-item .nav-link:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: orange;
+}
+
+.display-6 {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+
+.nav-link.active {
+    text-decoration: underline;
+    /* Adds underline when active */
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon.open {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M6 6l18 18M6 24L24 6'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.custom-control-label i {
+    font-size: 1.5rem;
+    color: #ffc107;
+    /* Sun color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#darkIcon {
+    color: black;
+    /* Moon color */
+}
+
+
+/* LIGH AND DARK MODE */
+
+header {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.custom-control {
+    margin: 12px 0;
+}
+
+/* Light and Dark Icons */
+.custom-control-label i {
+    font-size: 2.5rem;
+    color: #ffc107;
+    /* Sun color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#darkIcon {
+    color: #007bff;
+}
+
+@media screen and (max-width:600px) {
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbtn {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        transform: translateX(60%);
+    }
+}
+
+
+/* HERO */
+#hero-sec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hero-cont {
+    text-align: center;
+}
+
+.hero-img {
+    width: 400px;
+    height: auto;
+}
+
+.hero-info {
+    text-align: center;
+}
+
+.mx-auto h1 {
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (min-width:1200px) and (max-width: 2000px) {
+    #hero-sec {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width:100px) {
+    .hero-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .hero-info .display-2 {
+        font-size: 3.3rem;
+        font-weight: 100;
+    }
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #f8f9fa;
+    /* Light background */
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-section img {
+    width: 400px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* FACULTY SECTION */
+
+#faculty-sec {
+    margin: 50px 0;
+    font-family: var(--ff);
+}
+
+.faculty-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card {
+    width: 18rem;
+    transition: all 1.8s ease-in-out;
+    box-shadow: 3px 3px 0 rgba(128, 128, 128, 0.132);
+    margin-top: 20px;
+}
+
+/* FACULTY SECTION */
+
+#others-sec {
+    margin: 50px 0;
+    font-family: var(--ff);
+}
+
+.others-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 18rem;
+    transition: all 1.8s ease-in-out;
+    box-shadow: 3px 3px 0 whitesmoke;
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.btn-color {
+    background-color: orange;
+    color: black;
+    font-weight: 400;
+}
+
+.btn-color:hover {
+    color: white;
+}
+
+@media screen and (min-width:600px) {
+    .others-card {
+        width: 60%;
+    }
+}
+
+/* REVIEWS */
+
+
+.review-section {
+    background-color: gray;
+    /* Accent line at the top and bottom*/
+    border-top: 3px solid #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
+.review-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.review-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.form-control,
+.form-label,
+.btn {
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    background-color: #0056b3;
+    /* Darker blue */
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #f8f9fa;
+    /* Light background */
+    color: #343a40;
+    /* Dark text */
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+    /* Link hover color */
+}
+
+footer .fab {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .fab:hover {
+    color: #007bff;
+    transform: scale(1.2);
+    /* Slight zoom effect */
+}
