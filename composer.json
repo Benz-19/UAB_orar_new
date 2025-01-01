@@ -1,15 +1,14 @@
 {
-    "name": "uab/oeconomica",
+    "name": "hp/uab_new",
     "description": "University Schedule",
     "type": "project",
-    "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Uab\\Oeconomica\\": "src/"
+            "hp\\uab_new": "src/"
         }
     },
-    "minimum-stability": "stable",
     "require": {
-        "phpoffice/phpspreadsheet": "^3.5"
-    }
+        "monolog/monolog": "^3.8"
+    },
+    "minimum-stability": "stable"
 }

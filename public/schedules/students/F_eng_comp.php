@@ -5,9 +5,12 @@ include "../../../src/config/config.php";
 include "../../../src/classes/database.class.php";
 include "../../../src/classes/department.class.php";
 include "../../../src/classes/schedules.class.php";
-include "../../../src/classes/faculties.class.php";
+// include "../../../src/classes/faculties.class.php";
+include __DIR__ . "/../../../vendor/autoload.php";
 
 
+$t = new Faculties;
+$t->test();
 
 
 if (isset($_POST["submit"])) {

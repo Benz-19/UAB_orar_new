@@ -4,67 +4,27 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf71a90d744dbbd78fab9737b2123a8bf
+class ComposerStaticInitece2b17acfd53c4f1e4d36a266f5bae8
 {
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
-        array (
-            'ZipStream\\' => 10,
-        ),
-        'U' => 
-        array (
-            'Uab\\Oeconomica\\' => 15,
-        ),
         'P' => 
         array (
-            'Psr\\SimpleCache\\' => 16,
-            'Psr\\Http\\Message\\' => 17,
-            'Psr\\Http\\Client\\' => 16,
-            'PhpOffice\\PhpSpreadsheet\\' => 25,
+            'Psr\\Log\\' => 8,
         ),
         'M' => 
         array (
-            'Matrix\\' => 7,
-        ),
-        'C' => 
-        array (
-            'Complex\\' => 8,
+            'Monolog\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'ZipStream\\' => 
+        'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
+            0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Uab\\Oeconomica\\' => 
+        'Monolog\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-        'Psr\\SimpleCache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
-        ),
-        'Psr\\Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
-        ),
-        'Psr\\Http\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-client/src',
-        ),
-        'PhpOffice\\PhpSpreadsheet\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
-        ),
-        'Matrix\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
-        ),
-        'Complex\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
     );
 
@@ -75,9 +35,9 @@ class ComposerStaticInitf71a90d744dbbd78fab9737b2123a8bf
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf71a90d744dbbd78fab9737b2123a8bf::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf71a90d744dbbd78fab9737b2123a8bf::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitf71a90d744dbbd78fab9737b2123a8bf::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitece2b17acfd53c4f1e4d36a266f5bae8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitece2b17acfd53c4f1e4d36a266f5bae8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitece2b17acfd53c4f1e4d36a266f5bae8::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -12,4 +12,8 @@ class Faculties extends Database
         $result->execute();
         return $result->fetAll(PDO::FETCH_ASSOC);
     }
+    public function test()
+    {
+        echo "yes";
+    }
 }
