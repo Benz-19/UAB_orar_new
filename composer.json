@@ -3,12 +3,13 @@
     "description": "University Schedule",
     "type": "project",
     "autoload": {
-        "psr-4": {
-            "hp\\uab_new": "src/"
-        }
+        "classmap": [
+            "src/classes"
+        ]
     },
     "require": {
-        "monolog/monolog": "^3.8"
+        "monolog/monolog": "^3.8",
+        "phpoffice/phpspreadsheet": "*"
     },
     "minimum-stability": "stable"
 }
