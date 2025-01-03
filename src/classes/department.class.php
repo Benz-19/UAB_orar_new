@@ -6,10 +6,10 @@ class Department extends Database
 {
     public function getDepartment($facultyId)
     {
-        $sql = $this->Connection()->pepare("SELECT * FROM department WHERE faculty_id = :faculty_id");
+        $sql = $this->Connection()->prepare("SELECT * FROM department WHERE faculty_id = :faculty_id");
         $sql->bindParam(":faculty_id", $facultyId);
         $sql->execute();
-        return $sql->fetchAll(PDO::FETCH_ASSOC);
+        return $sql->fetchAll(PDO::FETCH_ASSOC); //
     }
 
     public function getDepartmentId($departmentName)
