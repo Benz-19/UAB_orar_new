@@ -2,8 +2,8 @@
 include "../src/config/config.php";
 include "includes/autoloader.inc.php";
 
-$db = new Database($server, $username, $password, $dbname);
-$conn = $db->getConnection();
+// $db = new Database($server, $username, $password, $dbname);
+// $conn = $db->getConnection();
 
 
 if ($conn) {
